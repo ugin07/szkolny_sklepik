@@ -1,0 +1,126 @@
+.navbar {
+  background-color: var(--navbar-bg);
+  color: var(--text-color);
+  padding: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .nav-link,
+.navbar .btn {
+  margin: 0 0.5rem;
+  white-space: nowrap;
+}
+
+.navbar .btn-outline-primary,
+.navbar .btn-outline-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+body {
+  padding-top: 70px;
+}
+
+.card {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-text {
+  max-height: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
+footer {
+  background-color: var(--footer-bg);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #a71d2a;
+}
+
+.alert {
+  border-radius: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .container,
+  .container-fluid,
+  .container-xxl {
+    padding: 0.5rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+
+  .navbar .btn {
+    margin: 0.25rem;
+  }
+}
